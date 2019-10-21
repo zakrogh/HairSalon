@@ -17,6 +17,6 @@
   <li>@Html.ActionLink($"{client.Name}", "Details", new { id = client.ClientId}) | @client.Stylist.Name</li>
 }
 
-<p>@Html.ActionLink("Add new client", "Create")</p>
-
-<p>@Html.ActionLink("Home", "Index", "Home")</p>
+<button type="button" class="btn btn-primary" onclick="window.location.href = '/Clients/Create'">Add New Client</button>
+<br><hr>
+<button type="button" class="btn btn-warning" onclick="window.location.href = '/'">Home</button>

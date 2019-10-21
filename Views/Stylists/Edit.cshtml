@@ -14,9 +14,12 @@
 
     @Html.LabelFor(model => model.Name)
     @Html.EditorFor(model => model.Name)
+    <br>
     @Html.LabelFor(model => model.Specialty)
     @Html.EditorFor(model => model.Specialty)
-
-    <input type="submit" value="Save" />
+    <br>
+    <input class="btn btn-success" type="submit" value="Save" />
 }
-<p>@Html.ActionLink("Back to stylists", "Index")</p>
+
+<br><hr>
+<button type="button" class="btn btn-warning" onclick="window.location.href = '/Stylists'">Back to Stylists</button>
